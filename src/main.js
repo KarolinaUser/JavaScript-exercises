@@ -287,17 +287,29 @@
 
 //zadanie
 
-const numbers = [1,2,3,4]
+// const numbers = [1,2,3,4]
 
-const food = ['eggs', 'pizza', 'burger', 'salat']
+// const food = ['eggs', 'pizza', 'burger', 'salat']
 
-const newArray = [...numbers, ...food]
+// const newArray = [...numbers, ...food]
 
-console.log(newArray)
+// console.log(newArray)
 
-//lub
+// //lub
 
-const newArray2 = numbers.concat(food)
+// const newArray2 = numbers.concat(food)
 
-console.log(newArray2)
+// console.log(newArray2)
 
+let numbers = [1,5,13,26,48]
+
+let newnumber = numbers.map(dowolnaNazwa => dowolnaNazwa * 5)
+
+console.log(newnumber)
+
+for (const dowolnaNazwa of newnumber){
+if(dowolnaNazwa % 2 === 0){
+    (console.log(`liczby parzyste:${dowolnaNazwa}`))
+} else { console.log(`liczby nieparzyste: ${dowolnaNazwa}`)}
+
+}
