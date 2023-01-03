@@ -214,19 +214,24 @@
 
 // console.log(x)
 
-// let numbers = [ 5, 8, 10,23,48,60]
+//  let numbers = [ 5, 8, 10,23,48,60]
 
-// for( let number of numbers ) {
-//   console.log(number / 5)
+//  for(let number of numbers) {
+//       console.log(number / 5)
+
+//  }
+
+//  for(let number of numbers) {
+//     console.log(number / 5)
+
+//     if(number % 2 === 0){
+//       console.log(`liczby parzyste: ${number}`)
+//     } else 
+//     console.log(`liczby nieparzyste: ${number}`)
 // }
 
-// for( let number of numbers ) 
-//     if (number % 2 === 0 ) {  
-//          console.log( `liczba ${number} jest parzysta`);
-//         }
-//   else {
-//     console.log(`liczka ${number} jest nieparzysta`);
-//   }
+
+
 
 //TABLICE
 
@@ -244,17 +249,55 @@
 // test.shift(test)
 // console.log(test)
 
+
+
 //zadanie do zrobienia 
-const numbers = [0, 0, 1, 1, 2, 2, 2]
-const colors = ['red', 'green', 'blue', true, 123]
-const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀']
+// const numbers = [0, 0, 1, 1, 2, 2, 2]
+// const colors = ['red', 'green', 'blue', true, 123]
+// const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀']
 
-//zadanie 
+// const numbers2 = numbers.slice(0, 2)
 
-const letters = ['c', 'd']
+// console.log(numbers2)
 
-letters.unshift('a','b')
-letters.push('e','f')
-console.log(letters)
+// const numbers3 = numbers.slice(-3)
 
-console.log(letters.includes('c'))
+// console.log(numbers3)
+
+// const randomStuff = colors.splice(3, 2)
+
+// console.log(colors)
+// console.log(randomStuff)
+
+// const carsNew = cars.splice(2,4, 'nowy element')
+
+// console.log(cars)
+
+// console.log(carsNew)
+
+// const letters = ['c', 'd']
+
+// letters.unshift('a', 'b')
+// letters.push('e', 'f')
+
+
+
+// console.log(letters)
+// console.log(letters.includes('c'))
+
+//zadanie
+
+const numbers = [1,2,3,4]
+
+const food = ['eggs', 'pizza', 'burger', 'salat']
+
+const newArray = [...numbers, ...food]
+
+console.log(newArray)
+
+//lub
+
+const newArray2 = numbers.concat(food)
+
+console.log(newArray2)
+
