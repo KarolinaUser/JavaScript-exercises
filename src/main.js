@@ -301,15 +301,47 @@
 
 // console.log(newArray2)
 
-let numbers = [1,5,13,26,48]
+// let numbers = [1,5,13,26,48]
 
-let newnumber = numbers.map(dowolnaNazwa => dowolnaNazwa * 5)
+// let newnumber = numbers.map(dowolnaNazwa => dowolnaNazwa * 5)
 
-console.log(newnumber)
+// console.log(newnumber)
 
-for (const dowolnaNazwa of newnumber){
-if(dowolnaNazwa % 2 === 0){
-    (console.log(`liczby parzyste:${dowolnaNazwa}`))
-} else { console.log(`liczby nieparzyste: ${dowolnaNazwa}`)}
+// for (const dowolnaNazwa of newnumber){
+// if(dowolnaNazwa % 2 === 0){
+//     (console.log(`liczby parzyste:${dowolnaNazwa}`))
+// } else { console.log(`liczby nieparzyste: ${dowolnaNazwa}`)}
+// }
 
+// let color = ['turkus']
+
+// color.unshift('red')
+
+// color.push('blue')
+
+// for(let i = 0; i < color.length; i++){
+//     console.log(`mojulubiony kolor to: ${color[i].charAt(0).toUpperCase() + color[i].slice(1)}`)
+// }
+
+
+// const cars = 'Audi, BMW, Mercedes, Nissan, Dodge'
+
+// const carArr = cars.split(', ')
+
+// carArr.length > 3 ? console.log('jest OK') : console.log('nie jest OK')
+
+// if(carArr.includes('Audi')){
+//   carArr.push('Lanborghini')
+// } else {
+//     carArr.pop()
+// }
+
+// console.log(carArr)
+
+//FUNKCJE
+
+function testowa(name, age) {
+    console.log(`moje imie: ${name} a moj wiek ${age}`)
 }
+
+testowa('Karolina', 20)
