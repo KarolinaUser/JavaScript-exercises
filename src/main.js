@@ -340,8 +340,44 @@
 
 //FUNKCJE
 
-function testowa(name, age) {
-    console.log(`moje imie: ${name} a moj wiek ${age}`)
-}
+// function testowa(name, age) {
+//     console.log(`moje imie: ${name} a moj wiek ${age}`)
+// }
 
-testowa('Karolina', 20)
+// testowa('Karolina', 20) 
+
+//funkcja strzałkowa - przykłady 
+
+//dwa parametry
+
+// const strzalkowaFunkcja = (x, y) => {
+//    console.log(x + y)
+// }
+// strzalkowaFunkcja(5,2)
+
+// //jeden paramentr 
+
+// const strzalka = (name) => console.log(name)
+
+// strzalka('Karolina')
+
+// //z return
+
+// const uzycieReturn = (car1, car2) => {
+//     console.log(car1, car2)
+//     return car1, car2
+// }
+
+// uzycieReturn('Audi', 'BMW')
+
+// //z tablicą 
+
+// const tablica = ['a', 'b', 'c']
+
+// const funkcja = tablica.forEach(function(nowaFunkcja) {
+//     console.log(nowaFunkcja)
+// })
+
+const name = (params) => {
+    
+}
