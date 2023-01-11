@@ -378,22 +378,54 @@
 //     console.log(nowaFunkcja)
 // })
 
-let score 
+// let score 
 
- const add = (x, y) => {
-   score = x + y
+//  const add = (x, y) => {
+//    score = x + y
 
-   if(score % 2 == 0){
-    parzysta()
-   } else niePrzysta()
+//    if(score % 2 == 0){
+//     parzysta()
+//    } else niePrzysta()
+// }
+
+// const przysta = () => {
+//    console.log(`wynik ${score} jest parzysty`)
+// }
+
+// const niePrzysta = () => {
+//     console.log(`wynik ${score} jest nieparzysty`)
+//  }
+
+// add(5,2)
+
+// let celsius 
+
+// let temp 
+
+// const fahrenheit = (c) => {
+//     celsius = c
+//     temp = celsius * 1.8 +32
+
+//     console.log(`${c} C jest równie ${temp} F` )
+// }
+
+// fahrenheit(20)
+
+// zadanie 
+
+let num = 10 
+let numbers = []
+
+for(let i = 0; i < num; i++){
+  numbers.push(i)
 }
 
-const przysta = () => {
-   console.log(`wynik ${score} jest parzysty`)
+ const checkNumbers = (numberek) => {
+    if(numberek % 3 === 0 && numberek !== 0){
+        console.log(`${numberek} jest podzielne przez 3`)
+    } else {
+        console.log(`${numberek} nie jest podzielny przez 3`)
+    }
 }
 
-const niePrzysta = () => {
-    console.log(`wynik ${score} jest nieparzysty`)
- }
-
-add(5,2)
+numbers.forEach(checkNumbers)
