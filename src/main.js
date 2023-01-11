@@ -363,7 +363,7 @@
 
 // //z return
 
-// const uzycieReturn = (car1, car2) => {
+// const uzyciem Return = (car1, car2) => {
 //     console.log(car1, car2)
 //     return car1, car2
 // }
@@ -378,6 +378,22 @@
 //     console.log(nowaFunkcja)
 // })
 
-const name = (params) => {
-    
+let score 
+
+ const add = (x, y) => {
+   score = x + y
+
+   if(score % 2 == 0){
+    parzysta()
+   } else niePrzysta()
 }
+
+const przysta = () => {
+   console.log(`wynik ${score} jest parzysty`)
+}
+
+const niePrzysta = () => {
+    console.log(`wynik ${score} jest nieparzysty`)
+ }
+
+add(5,2)
