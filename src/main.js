@@ -411,21 +411,41 @@
 
 // fahrenheit(20)
 
-// zadanie 
+// // zadanie 
 
-let num = 10 
-let numbers = []
+// let num = 10 
+// let numbers = []
 
-for(let i = 0; i < num; i++){
-  numbers.push(i)
-}
+// for(let i = 0; i < num; i++){
+//   numbers.push(i)
+// }
 
- const checkNumbers = (numberek) => {
-    if(numberek % 3 === 0 && numberek !== 0){
-        console.log(`${numberek} jest podzielne przez 3`)
-    } else {
-        console.log(`${numberek} nie jest podzielny przez 3`)
-    }
-}
+//  const checkNumbers = (numberek) => {
+//     if(numberek % 3 === 0 && numberek !== 0){
+//         console.log(`${numberek} jest podzielne przez 3`)
+//     } else {
+//         console.log(`${numberek} nie jest podzielny przez 3`)
+//     }
+// }
 
-numbers.forEach(checkNumbers)
+// numbers.forEach(checkNumbers)
+
+//DOM / WIDNOWS /DOCUMENT
+
+// const heading = document.querySelector('h1')
+
+// console.log(heading)
+
+// const ulList = document.createElement('ul')
+// const liList = document.createElement('li')
+// liList.textContent = 'hej'
+// console.log(liList)
+
+// document.body.appendChild(ulList)
+
+// ulList.appendChild(liList)
+
+const div = document.querySelector('div')
+const par = document.createElement('p')
+
+div.appendChild('par')
