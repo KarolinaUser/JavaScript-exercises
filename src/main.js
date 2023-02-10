@@ -445,7 +445,140 @@
 
 // ulList.appendChild(liList)
 
-const div = document.querySelector('div')
-const par = document.createElement('p')
+// const div = document.querySelector('div')
+// const par = document.createElement('p')
 
-div.appendChild('par')
+// div.appendChild(par)
+
+// function addText(x,y){
+//     console.log(`mam na imie ${x} i mam ${y}lat`)
+// }
+
+// addText('Karolina', 15)
+
+// const days = ['pon', 'wto', 'sro']
+
+// const days2 = days.forEach( day => console.log(day))
+
+
+//ZADANIE: stworzyć zmienną score potem funkcje add, nastepnie inne dwie funkcje  i zgodnie z wynikiem je wyswietlić 
+
+// let score 
+
+// const add = (x,y) => {
+// score = x + y
+// if(score % 2 === 0){
+//    funkcjaJeden()
+// } else {
+//     funkcjaDwa()
+// }
+// }
+
+// const funkcjaJeden = () => {
+//     console.log(`liczba ${score} jest parzysta`)
+// }
+
+// const funkcjaDwa = () => {
+//     console.log(`liczba ${score} jest nieparzysta`)
+// }
+
+//    add(10,1)  //wywołanie funkcji 
+
+   //DOM DOCUMENT WINDOW 
+
+   //pobieranie by name 
+
+//    const getName = document.getElementsByClassName('className')
+
+//    console.log(getName)
+
+   //zadanie pobrac wszystkie elementy do zmiennych 
+
+// const heading = document.querySelector('h1')
+
+// console.log(heading)
+
+// const paragraf = document.querySelectorAll('p')
+
+// console.log(paragraf)
+
+//ZADANIR TWORZENIE ELEMENTÓW 
+
+
+// const ulItem = document.createElement('ul')
+
+// const liItem = document.createElement('li')
+
+// liItem.textContent ='czesc'
+
+// document.body.appendChild(ulItem)
+
+// ulItem.appendChild(liItem)
+
+// const getDiv = document.querySelector('div')
+
+// const paragraf = document.createElement('p')
+
+// getDiv.appendChild(paragraf)
+
+//ZADANIE Z EVENT LISTENER 
+
+// const btn3 = document.querySelector('.btn-3')
+
+// const test = () => {
+//     console.log('duble click')
+// }
+
+// btn3.addEventListener('click', test)
+
+// const gold = document.querySelector('.gold')
+
+// const nevCircle = document.createElement('div')
+
+// gold.append(nevCircle)
+
+//zadanie z listy 
+
+
+// const ulList = document.createElement('ul') 
+// document.body.append(ulList)
+
+// const number = 10
+
+// for( let i = 1; i <= number; i++){
+//   const liItem = document.createElement('li')
+//   liItem.textContent = i
+//   ulList.append(liItem)
+// }
+
+//ZADANIE 2
+
+const p1 = document.querySelector('.p1')
+const p2 = document.querySelector('.p2')
+
+const btn1 = document.querySelector('.btn1')
+const btn2 = document.querySelector('.btn2')
+
+const divSqare = document.querySelector('.square')
+
+const f1 = () => {
+    console.log('hej')
+}
+
+const f2 = () => {
+   divSqare.style.background = 'tomato'
+}
+
+const f3 = () => {
+    divSqare.style.background = 'royalblue'
+ }
+
+ const f4 = () => {
+    p1.classList.toggle(show)
+    p2.classList.toggle(show)
+ }
+
+ btn1.addEventListener('dblclick', f1)
+ divSqare.addEventListener('mouseenter', f2)
+ divSqare.addEventListener('mouseleave', f3)
+ btn2.addEventListener('click', f4)
