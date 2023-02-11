@@ -551,34 +551,74 @@
 //   ulList.append(liItem)
 // }
 
-//ZADANIE 2
+//ZADANIE 2 + HTML 
 
-const p1 = document.querySelector('.p1')
-const p2 = document.querySelector('.p2')
+// const p1 = document.querySelector('.p1')
+// const p2 = document.querySelector('.p2')
 
-const btn1 = document.querySelector('.btn1')
-const btn2 = document.querySelector('.btn2')
+// const btn1 = document.querySelector('.btn1')
+// const btn2 = document.querySelector('.btn2')
 
-const divSqare = document.querySelector('.square')
+// const divSqare = document.querySelector('.square')
 
-const f1 = () => {
-    console.log('hej')
+// const f1 = () => {
+//     console.log('hej')
+// }
+
+// const f2 = () => {
+//    divSqare.style.background = 'tomato'
+// }
+
+// const f3 = () => {
+//     divSqare.style.background = 'royalblue'
+//  }
+
+//  const f4 = () => {
+//     p1.classList.toggle(show)
+//     p2.classList.toggle(show)
+//  }
+
+//  btn1.addEventListener('dblclick', f1)
+//  divSqare.addEventListener('mouseenter', f2)
+//  divSqare.addEventListener('mouseleave', f3)
+//  btn2.addEventListener('click', f4)
+
+//ZADANIA Z POZOSTAŁYCH 
+
+// const image = document.querySelector('img')
+
+// image.setAttribute('src', 'http://unsplash.it/600/400')
+// image.setAttribute('alt', 'losowy obraz')
+
+// const test = () => {
+//    console.log('wywołana po 2 sek')
+// }
+
+// setTimeout(test, 2000)
+
+//ZADANIE 2 POZOSTAŁE 
+
+const allLIelement = document.querySelectorAll('li')
+
+let number = 1 
+
+//pierwszy sposób z of
+
+// for(const liItems of allLIelement){
+//     liItems.textContent = number
+//     liItems.dataset.id = number
+//     number++
+// }
+
+//drugi sposób sam for 
+
+for( let i = 0; i < allLIelement.length; i++ ) {
+   allLIelement[i].textContent = number
+   allLIelement[i].dataset.id = number
+   number++
+
 }
 
-const f2 = () => {
-   divSqare.style.background = 'tomato'
-}
+const thirdLi = document.querySelector('[data-id = "3"]')
 
-const f3 = () => {
-    divSqare.style.background = 'royalblue'
- }
-
- const f4 = () => {
-    p1.classList.toggle(show)
-    p2.classList.toggle(show)
- }
-
- btn1.addEventListener('dblclick', f1)
- divSqare.addEventListener('mouseenter', f2)
- divSqare.addEventListener('mouseleave', f3)
- btn2.addEventListener('click', f4)
+console.log(thirdLi.closest('.wrapper'))
